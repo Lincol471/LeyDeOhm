@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Ley de Ohm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Ley de Ohm</h1>
+    <div class="inputs">
+      <label>Voltaje (V): <input type="number" id="voltaje" placeholder="Ej: 12"></label>
+      <label>Corriente (I): <input type="number" id="corriente" placeholder="Ej: 2"></label>
+      <label>Resistencia (R): <input type="number" id="resistencia" placeholder="Ej: 6"></label>
+    </div>
+    <div class="buttons">
+      <button onclick="calcular()">Calcular</button>
+      <button onclick="reiniciar()">Restablecer</button>
+    </div>
+    <div id="resultado"></div>
+    <canvas id="grafico"></canvas>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
